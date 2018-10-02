@@ -34,7 +34,7 @@ void setup()
   for (int i = 0; i < sizeof(umlauts) - 1; i++)
   {
     Serial.write(umlauts[i]); Serial.print(" : ");
-    Serial.print(uint16_t(umlauts[i])); Serial.print(" ");
+    Serial.print(uint16_t(umlauts[i]), base); Serial.print(" ");
     CheckPrint.print(umlauts[i]);
     CheckGfx.print(umlauts[i]);
     Serial.println();
